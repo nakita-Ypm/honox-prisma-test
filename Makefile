@@ -25,3 +25,7 @@ pi:
 
 pui:
 	scripts/uninstall.sh
+
+# prisma
+mig:
+	yarn prisma migrate dev --name init
