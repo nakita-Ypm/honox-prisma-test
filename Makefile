@@ -7,6 +7,10 @@ deps:
 	rm -rf node_modules yarn.lock
 	yarn install
 
+# format
+fmt:
+	yarn biome format --write ./
+
 # chmod
 chmod:
 	chmod +x scripts/install.sh
