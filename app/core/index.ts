@@ -12,8 +12,6 @@ export class App {
     if (this.username && this.password) {
       app.use('/auth/*', basicAuth({ username: this.username, password: this.password }))
     }
-    console.log(this.username)
-    console.log(this.password)
     return this.applyRoutes(app)
   }
 
