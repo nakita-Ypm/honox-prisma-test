@@ -2,6 +2,10 @@
 run:
 	yarn dev
 
+# init
+init:
+	cp .env.example .env
+
 # deps
 deps:
 	rm -rf node_modules yarn.lock
