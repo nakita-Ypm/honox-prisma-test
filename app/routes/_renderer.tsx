@@ -1,6 +1,7 @@
 import { Style } from 'hono/css'
 import { jsxRenderer } from 'hono/jsx-renderer'
 import { Script } from 'honox/server'
+import { globalClass } from '../styles'
 
 export default jsxRenderer(({ children, title }) => {
   return (
@@ -13,7 +14,7 @@ export default jsxRenderer(({ children, title }) => {
         <Script src='/app/client.ts' async />
         <Style />
       </head>
-      <body>{children}</body>
+      <body class={globalClass}>{children}</body>
     </html>
   )
 })
