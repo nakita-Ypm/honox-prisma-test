@@ -29,3 +29,6 @@ pui:
 # prisma
 mig:
 	yarn prisma migrate dev --name init
+
+gen:
+	yarn prisma generate

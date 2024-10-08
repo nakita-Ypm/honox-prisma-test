@@ -1,6 +1,6 @@
 import { Post, Prisma } from '@prisma/client'
 import { prisma } from '../infra/prisma'
-import { PostDomain } from '../domain/post'
+import { PostDomain } from '../domain/post_domain'
 
 export class PostService {
   /**
