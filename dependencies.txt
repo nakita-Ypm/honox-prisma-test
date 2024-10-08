@@ -1,0 +1,4 @@
+hono
+honox
+@hono/zod-openapi
+@prisma/client

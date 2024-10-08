@@ -1,0 +1,12 @@
+@hono/vite-build
+@hono/vite-dev-server
+wrangler
+vite
+@biomejs/biome
+@hono/swagger-ui
+prisma
+prisma-markdown
+zod-prisma
+typedoc
+typedoc-plugin-mermaid
+typedoc-plugin-markdown
