@@ -7,6 +7,3 @@ vite
 prisma
 prisma-markdown
 zod-prisma
-typedoc
-typedoc-plugin-mermaid
-typedoc-plugin-markdown
