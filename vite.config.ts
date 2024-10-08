@@ -8,4 +8,7 @@ export default defineConfig({
   ssr: {
     external: ['@prisma/client'],
   },
+  define: {
+    'process.env': {},
+  },
 })
