@@ -2,6 +2,7 @@ import { OpenAPIHono } from '@hono/zod-openapi'
 import { basicAuth } from 'hono/basic-auth'
 import { HonoXHandler } from './handler/honox_handler'
 import { SwaggerHandler } from './handler/swagger_handler'
+import { PostHandler } from './handler/post_handler'
 
 export class App {
   private static username = process.env.SWAGGER_USER
@@ -17,6 +18,9 @@ export class App {
   }
 
   static applyRoutes(app: OpenAPIHono) {
-    return app.route('/', HonoXHandler.apply(app)).route('/', SwaggerHandler.apply(app))
+    return app
+      .route('/', HonoXHandler.apply(app))
+      .route('/', PostHandler.apply(app))
+      .route('/', SwaggerHandler.apply(app))
   }
 }

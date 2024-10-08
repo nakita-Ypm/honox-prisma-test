@@ -5,4 +5,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [honox({ devServer: { adapter } }), build()],
+  ssr: {
+    external: ['@prisma/client'],
+  },
 })
