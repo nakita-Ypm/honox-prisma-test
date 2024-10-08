@@ -1,10 +1,9 @@
-@cloudflare/workers-types
-@hono/vite-build
-@hono/vite-dev-server
-wrangler
-vite
 @biomejs/biome
 @hono/swagger-ui
+@hono/vite-build
+@hono/vite-dev-server
 prisma
 prisma-markdown
+vite
+wrangler
 zod-prisma
